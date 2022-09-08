@@ -152,6 +152,7 @@ hr {
   background: url("./img/card005.jpg") no-repeat center center/cover;
   margin-bottom: 20px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 25px;
 }
