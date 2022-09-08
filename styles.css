@@ -64,6 +64,10 @@ ul {
   color: black;
 }
 
+.nav-main .nav-menu-right a i{
+  color: black;
+}
+
 
 hr {
   height: 5px;
@@ -184,6 +188,7 @@ hr {
 
 .links a i {
   font-size: 2.5rem;
+  color: black;
 }
 
 /* FOOTER */
