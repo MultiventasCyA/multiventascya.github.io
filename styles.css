@@ -30,7 +30,7 @@ ul {
 
 /* NAVEGACION */
 .nav-main {
-  font-size: 17;
+  font-size: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +90,10 @@ hr {
   color: white;
 }
 
+.showcase p{
+  font-size: 17px;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -111,6 +115,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
+  margin-bottom: 10px;
 }
 
 .new-cards img {
