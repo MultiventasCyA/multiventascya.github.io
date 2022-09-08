@@ -60,6 +60,10 @@ ul {
   margin-left: 10px;  
 }
 
+.nav-main .nav-menu a{
+  color: black;
+}
+
 
 hr {
   height: 5px;
