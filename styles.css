@@ -256,7 +256,7 @@ hr {
 }
 
 @media (max-width: 500px) {
-  .new-cards {
+  .new-cards{
     grid-template-columns: 1fr;
   }
 
