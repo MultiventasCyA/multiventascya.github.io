@@ -25,8 +25,6 @@ body {
   border-radius: 10px;
   background-color: #00aec7;
   overflow: hidden;
-  position: sticky;
-  top: 0;
 }
 
 /* Dale estilo a los enlaces dentro de la barra de navegación */
@@ -97,7 +95,7 @@ body {
 /* Agregue un fondo oscuro en los enlaces de navegación superiores y el botón desplegable al pasar el mouse */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #555;
+  background-color: #f96f00;
   color: white;
 }
 

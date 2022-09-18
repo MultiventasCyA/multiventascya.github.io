@@ -25,9 +25,6 @@ body {
   border-radius: 10px;
   background-color: #00aec7;
   overflow: hidden;
-  /* position: fixed; */
-  position: sticky;
-  top: 0;
 }
 
 /* Dale estilo a los enlaces dentro de la barra de navegación */
