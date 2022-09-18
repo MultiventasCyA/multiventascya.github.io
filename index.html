@@ -11,178 +11,189 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=GFS+Didot&family=Noto+Serif+Georgian&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- BOTON HAMBURGUESA -->
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i> 
+    <!-- MENU NAVEGACION -->
+    <div class="topnav" id="myTopnav">
+      <a href="/" aria-current="page">Inicio</a>
+      <a href="#news">Nuevo</a>
+      <a href="contacto.html">Contacto</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <!-- <a href="#about">About</a> -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
     </div>
 
-    <!-- TODO EL CONTENEDOR DE ELEMENTOS -->
-    <div class="container">
-      <!-- MENU -->
-      <nav class="nav-main">
-        <img src="img/Logo.png" alt="Logo C&A" class="nav-brand" />
-        <ul class="nav-menu">
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="/catalogo.html">Catalogo</a></li>
-          <li><a href="#">Conctacto</a></li>
-          <li><a href="#">Acerca de..</a></li>
-        </ul>
-        <ul class="nav-menu-right">
-          <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          </li>
-        </ul>
-      </nav>
-
-      <hr />
-
-      <!-- SHOWCASE -->
-      <header class="showcase">
-        <!-- <h2>Grandes Emociones</h2>
+    <!-- SHOWCASE -->
+    <header class="showcase">
+      <!-- <h2>Grandes Emociones</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
           veritatis ut doloribus libero sunt repellat quibusdam soluta sed
           incidunt deserunt.
         </p> -->
-        <a href="#" class="btn" target="_blank">
+      <!-- <a href="#" class="btn" target="_blank">
           Leer Mas <i class="fas fa-angle-double-right"></i
+        ></a> -->
+    </header>
+
+    <!-- NEW CARDS ONE -->
+    <div class="new-cards">
+      <div>
+        <img src="img/card001.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
         ></a>
-      </header>
-
-      <!-- NEW CARDS ONE -->
-      <div class="new-cards">
-          <div>
-          <img src="img/card001.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card002.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card003.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card004.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
       </div>
-
-      <!-- BANNER -->
-      <section class="cards-banner">
-        <div class="content">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim
-            sequi! Tempore cupiditate explicabo porro sed enim beatae molestiae
-            laboriosam atque eos itaque, rerum odit?
-          </p>
-          <a href="#" class="btn" target="_blank"
-            >Leer mas <i class="fas fa-angle-double-right"></i
-          ></a>
-        </div>
-      </section>
-
-      <!-- NEW CARDS TWO -->
-      <div class="new-cards">
-        <div>
-          <img src="img/card001.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card002.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card003.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        <div>
-          <img src="img/card004.jpg" alt="CARDS" />
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-            corrupti laboriosam voluptatibus iste omnis, perferendis placeat
-            maxime harum repellat temporibus.
-          </p>
-          <a href="#" target="_blank">Leer mas <i class="fas fa-angle-double-right"></i></a>
-        </div>
+      <div>
+        <img src="img/card002.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
       </div>
-
-      <hr />
-
-      <!-- SOCIAL -->
-      <section class="social">
-        <p>Sigue a Multiventas</p>
-        <div class="links">
-          <a href="https://www.facebook.com/MultiventasCyA" target="_blank">
-            <i class="fa-brands fa-square-facebook"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-square-twitter"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
-        </div>
-      </section>
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <h3>Multiventas CyA &copy; 2019</h3>
-      </footer>
+      <div>
+        <img src="img/card003.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+      <div>
+        <img src="img/card004.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
     </div>
+
+    <!-- BANNER -->
+    <section class="cards-banner">
+      <div class="content">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim
+          sequi! Tempore cupiditate explicabo porro sed enim beatae molestiae
+          laboriosam atque eos itaque, rerum odit?
+        </p>
+        <a href="#" class="btn" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- NEW CARDS TWO -->
+    <div class="new-cards">
+      <div>
+        <img src="img/card001.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+      <div>
+        <img src="img/card002.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+      <div>
+        <img src="img/card003.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+      <div>
+        <img src="img/card004.jpg" alt="CARDS" />
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+          corrupti laboriosam voluptatibus iste omnis, perferendis placeat
+          maxime harum repellat temporibus.
+        </p>
+        <a href="#" target="_blank"
+          >Leer mas <i class="fas fa-angle-double-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <section class="social">
+      <p>Sigue a Multiventas</p>
+      <div class="links">
+        <a href="https://www.facebook.com/MultiventasCyA" target="_blank">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-square-twitter"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footeri">
+      <h4>Multiventas C&A&copy; 2019 Mérida Yuc. México</h4>
+    </footer>
 
     <script src="main.js"></script>
   </body>
