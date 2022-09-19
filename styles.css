@@ -1,11 +1,11 @@
-/* ROOT y VARIABLES */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ROOT y VARIABLES ////////////////////////////////*/
 :root {
   --font-abril: "Abril Fatface", cursive;
   --font-didot: "GFS Didot", serif;
   --font-noto: "Noto Serif Georgian", serif;
 }
 
-/* RESETEO DE ESTILOS */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!RESETEO DE ESTILOS ///////////////////////////////////*/
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +19,7 @@ body {
   margin: auto;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVEGACION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Agregue un color de fondo negro a la navegación superior */
 .topnav {
   margin: 5px 0;
@@ -37,12 +38,6 @@ body {
   text-decoration: none;
   font-size: 17px;
 }
-
-/* Agregue una clase activa para resaltar la página actual */
-/* .active {
-  background-color: #f96f00;
-  color: white;
-} */
 
 .topnav a[aria-current="page"] {
   background-color: #f96f00;
@@ -110,6 +105,9 @@ body {
   display: block;
 }
 
+/**
+  *!!!!!!!!!!!!!!!!!!MEDIA QUERY///////////////////////
+*/
 /* Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child),
@@ -165,85 +163,10 @@ body {
   border-radius: 25px;
 }
 
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  font-weight: bold;
-  padding: 10px 20px;
-  background: #262626;
-  color: white;
-  border: 2px solid #ffff;
-  margin: 10px 0;
-}
-
-/* BOTON CON PSEUDOCLASE HOVER */
-.btn:hover {
-  opacity: 0.7;
-}
-
-/* NEW CARDS ONE - TWO */
-.new-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px;
-  margin-bottom: 10px;
-}
-
-.new-cards img {
-  width: 100%;
-  height: 180px;
-  border-radius: 25px;
-}
-
-.new-cards h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.new-cards a {
-  padding: 10px 0;
-  color: black;
-  text-transform: uppercase;
-  display: inline-block;
-  font-weight: bold;
-}
-
-.new-cards a:hover {
-  text-decoration: underline;
-}
-
-/* BANNER */
-.cards-banner {
-  width: 100%;
-  height: 300px;
-  background: url("./img/card005.jpg") no-repeat center center/cover;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-radius: 25px;
-}
-
-.cards-banner .content {
-  width: 45%;
-  padding: 0 30px 0 0;
-  text-align: right;
-}
-
-.cards-banner p,
-.cards-banner h2 {
-  margin: 0px 0 20px 0;
-  color: black;
-}
-
-.cards-banner p {
-  font-size: 17px;
-}
-
-/* SOCIAL */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
 .social {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 50px 0;
   border-top: 4px solid black;
 }
@@ -269,8 +192,8 @@ body {
   color: black;
 }
 
-/* FOOTER COPYRIGHT*/
-.footeri {
+/*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
+.footer {
   font-size: 0.7rem;
   text-align: center;
   padding: 15px;

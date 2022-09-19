@@ -1,11 +1,13 @@
-/* ROOT y VARIABLES */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ROOT y VARIABLES ////////////////////////////////*/
 :root {
   --font-abril: "Abril Fatface", cursive;
   --font-didot: "GFS Didot", serif;
   --font-noto: "Noto Serif Georgian", serif;
+  --color-b: #00aec7;
+  --color-f: #f96f00;
 }
 
-/* RESETEO DE ESTILOS */
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!RESETEO DE ESTILOS ///////////////////////////////////*/
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +21,7 @@ body {
   margin: auto;
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVEHACION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 /* Agregue un color de fondo negro a la navegación superior */
 .topnav {
   margin: 5px 0;
@@ -110,6 +113,7 @@ body {
   display: block;
 }
 
+/*!!!!!!!!!!!!!!!!!!MEDIA QUERY///////////////////////
 /* Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child),
@@ -150,8 +154,78 @@ body {
   }
 }
 
-/* FOOTER COPYRIGHT*/
-.footerc {
+/*!!!!!!!!!!!!!!!!! FORMULARIO DE CONTACTO Y MAPA ///////////////////////////////////
+/* Agregue un color de fondo y algo de relleno alrededor del formulario */
+.container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  padding: 20px;
+  margin:15px;
+}
+
+/* Entradas de estilo con tipo = "texto", seleccione elementos y áreas de texto */
+input[type="text"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Dale estilo al botón de enviar con un color de fondo específico, etc. */
+input[type="submit"] {
+  background-color: var(--color-b);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Al mover el mouse sobre el botón Enviar, agregue un color verde más oscuro */
+input[type="submit"]:hover {
+  background-color: var(--color-f);
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
+.social {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px 0;
+  border-top: 4px solid black;
+}
+
+.social p {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 2.5rem;
+  color: black;
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
+.footer {
   font-size: 0.7rem;
   text-align: center;
   padding: 15px;
