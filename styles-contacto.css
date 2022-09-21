@@ -8,7 +8,7 @@
   --color-gris: #d8d8d8;
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!RESETEO DE ESTILOS ///////////////////////////////////*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!RESETEO DE ESTILOS ////////////////////////////////*/
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +21,7 @@ body {
   margin: auto;
   min-height: 100%;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAGVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!! NAGVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Agregue un color de fondo negro a la navegación superior */
 .topnav {
   margin: auto;
@@ -139,13 +139,22 @@ body {
 /* Agregue un color de fondo y algo de relleno alrededor del formulario */
 .container {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
+  align-content: center;
   border-radius: 5px;
   background-color: var(--color-gris);
   padding: 20px;
   margin: 10px 0;
 }
+
+.container .form,
+.container .maps {
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 /* Entradas de estilo con tipo = "texto", seleccione elementos y áreas de texto */
 input[type="text"],
 textarea {
@@ -172,7 +181,7 @@ input[type="submit"]:hover {
   background-color: var(--color-f);
 }
 
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES//////////////////////////////*/
 .social {
   width: 100%;
   margin-top: 20px;
