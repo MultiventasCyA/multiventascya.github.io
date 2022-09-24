@@ -24,7 +24,7 @@ body {
 .topnav {
   margin: auto;
   border-radius: 10px;
-  background-color: #00aec7;
+  background-color: var(--color-b);
   overflow: hidden;
 }
 /*TODO Dale estilo a los enlaces dentro de la barra de navegación */
@@ -94,9 +94,53 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SHOWCASE ///////////////////////////////////*/
+.showcase {
+  width: 100%;
+}
+.showcase img {
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
+.social {
+  width: 100%;
+  padding: 25px 0;
+  border-top: 4px solid black;
+}
+.social p {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links a {
+  margin: 0 30px;
+}
+.links a i {
+  font-size: 45px;
+  color: black;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
+.footer {
+  font-size: 12px;
+  text-align: center;
+  padding: 15px;
+  background: var(--color-b);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
 /*!!!!!!!!!!!!!!!!!! MEDIA QUERY ///////////////////////*/
 /* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -105,9 +149,6 @@ body {
     float: right;
     display: block;
   }
-}
-/*TODO La clase "sensible" se agrega a la navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la navegación superior se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
-@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
   }
@@ -132,69 +173,19 @@ body {
     width: 100%;
     text-align: left;
   }
-}
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! SHOWCASE ///////////////////////////////////*/
-.showcase {
-  width: 100%;
-  height: 500px;
-  background: url("./img/fondo1.png") no-repeat center center/cover;
-  padding: 50px;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  /* border: 1px #262626 solid; */
-  border-radius: 25px;
-}
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
-.social {
-  width: 100%;
-  padding: 25px 0;
-  border-top: 4px solid black;
-}
-.social p {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.links a {
-  margin: 0 30px;
-}
-.links a i {
-  font-size: 2.5rem;
-  color: black;
-}
-/*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
-.footer {
-  font-size: 0.7rem;
-  text-align: center;
-  padding: 15px;
-  background: #00aec7;
-  font-weight: bold;
-  border-radius: 10px;
-}
-/*!!!!!!!!!!!!!!!!!!MEDIA QUERY///////////////////////*/
-@media (max-width: 700px) {
-  .new-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .social p {
+    font-size: 30px;
   }
-}
-@media (max-width: 500px) {
-  .new-cards {
-    grid-template-columns: 1fr;
+  .links a i {
+    font-size: 30px;
+    color: black;
   }
-
-  .new-cards img {
-    height: 270px;
-  }
-
-  .cards-banner .content {
-    width: 100%;
+  .footer {
+    font-size: 9px;
+    text-align: center;
+    padding: 15px;
+    background: var(--color-b);
+    font-weight: bold;
+    border-radius: 10px;
   }
 }

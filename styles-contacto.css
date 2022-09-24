@@ -19,7 +19,6 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 98%;
   margin: auto;
-  min-height: 100%;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!! NAGVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Agregue un color de fondo negro a la navegación superior */
@@ -137,21 +136,23 @@ body {
 }
 /*!!!!!!!!!!!!!!!!! FORMULARIO DE CONTACTO Y MAPA ///////////////////////////////////*/
 /* Agregue un color de fondo y algo de relleno alrededor del formulario */
-.container {
+.container{
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(30rem, 1fr));
+  margin: 10px;
+  border-radius: 10px;
   background-color: var(--color-gris);
-  padding: 20px;
-  margin: 10px 0;
+  padding: 10px;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 
-.container .form,
-.container .maps {
-  width: 100%;
-  margin: 10px;
+iframe{
+  width: 90%;
+  min-height: 100%;
   border-radius: 10px;
 }
 
