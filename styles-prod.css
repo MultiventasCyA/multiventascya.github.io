@@ -1,4 +1,4 @@
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!ROOT y VARIABLES ////////////////////////////*/
+/**------------------------------ROOT y VARIABLES -------------------------*/
 :root {
   --font-abril: "Abril Fatface", cursive;
   --font-didot: "GFS Didot", serif;
@@ -21,8 +21,7 @@ body {
   width: 98%;
   margin: auto;
 }
-
-/* !--------------------------- NAVEGACION ------------------------------------*/
+/* *--------------------------- NAVEGACION ------------------------------------*/
 /*TODO Agregue un color de fondo negro a la navegación superior */
 .topnav {
   margin: auto;
@@ -97,7 +96,16 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* !--------------------- ESTILOS DE LAS IMAGENES------------------------ */
+/**---------------------------- HEADER PAGINA ------------------------------*/
+.title-prod {
+  color: #000000;
+  background: #ffffff;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  color: #000000;
+  background: #ffffff;
+  text-align: center;
+}
+/* *--------------------- ESTILOS DE LAS IMAGENES------------------------ */
 .container {
   width: 100%;
   margin: 10px 0;
@@ -106,33 +114,42 @@ body {
   justify-content: center;
   align-content: center;
 }
-
 div.img {
-  margin: 10px 10px;
+  margin: 10px auto;
   width: 230px;
   border: 3px solid transparent;
   cursor: pointer;
 }
-
 div.img:hover {
   border: 3px solid var(--color-f);
   border-radius: 13px;
+  opacity: .8;
 }
-
 div.img img {
   width: 100%;
   height: 230px;
   border-radius: 10px;
+  object-fit: contain;
 }
-
 div.desc {
-  padding: 15px;
+  font-size: 15px;
+  padding: 5px;
+  min-height: 180px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 0 0 10px 10px;
 }
-
-/*!-------------------------- REDES SOCIALES ----------------------------*/
+div.precio {
+  font-family: var(--font-noto);
+  color: red;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+hr {
+  border: 5px solid var(--color-b);
+}
+/**-------------------------- REDES SOCIALES ----------------------------*/
 .social {
   width: 100%;
   margin-top: 20px;
@@ -156,7 +173,7 @@ div.desc {
   font-size: 45px;
   color: black;
 }
-/*!---------------------------- FOOTER COPYRIGHT ----------------------------*/
+/**---------------------------- FOOTER COPYRIGHT ----------------------------*/
 .footer {
   font-size: 12px;
   text-align: center;
@@ -165,8 +182,7 @@ div.desc {
   font-weight: bold;
   border-radius: 10px;
 }
-
-/*!------------------------------- MEDIA QUERY -------------------------------*/
+/**------------------------------- MEDIA QUERY -------------------------------*/
 /* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 /*TODO La clase "responsive" se agrega a la navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la navegación superior se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
 @media screen and (max-width: 576px) {

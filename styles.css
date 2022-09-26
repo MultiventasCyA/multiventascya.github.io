@@ -102,6 +102,7 @@ body {
 .showcase img {
   width: 100%;
   margin: 10px auto;
+  object-fit: contain;
   border: 1px solid transparent;
   border-radius: 10px;
 }

@@ -99,20 +99,20 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
   margin: 10px auto;
-  background-color: var(--color-gris);
+  /* background-color: var(--color-gris);
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 .container .fmap {
   margin: 10px;
+  background: var(--color-gris);
   border: 1px solid transparent;
   border-radius: 5px;
 }
-
 /* Entradas de estilo con tipo = "texto", seleccione elementos y áreas de texto */
 input[type="text"],
 textarea {
@@ -127,6 +127,7 @@ textarea {
 }
 /* Dale estilo al botón de enviar con un color de fondo específico, etc. */
 input[type="submit"] {
+  width: 100%;
   background-color: var(--color-b);
   color: white;
   padding: 12px 20px;
@@ -210,10 +211,10 @@ input[type="submit"]:hover {
     text-align: left;
   }
   .social p {
-    font-size: 30px;
+    font-size: 25px;
   }
   .links a i {
-    font-size: 30px;
+    font-size: 25px;
     color: black;
   }
   .footer {
