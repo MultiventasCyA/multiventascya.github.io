@@ -137,6 +137,7 @@ body {
   background: var(--color-b);
   font-weight: bold;
   border-radius: 10px;
+  color: white;
 }
 
 /*!!!!!!!!!!!!!!!!!! MEDIA QUERY ///////////////////////*/

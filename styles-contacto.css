@@ -171,6 +171,7 @@ input[type="submit"]:hover {
   background: var(--color-b);
   font-weight: bold;
   border-radius: 10px;
+  color: white;
 }
 /*!!!!!!!!!!!!!!!!!! MEDIA QUERY ///////////////////////*/
 /** Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */

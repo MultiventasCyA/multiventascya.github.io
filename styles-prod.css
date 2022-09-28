@@ -1,4 +1,4 @@
-/**------------------------------ROOT y VARIABLES -------------------------*/
+/**---------------ROOT y VARIABLES --------------*/
 :root {
   --font-abril: "Abril Fatface", cursive;
   --font-didot: "GFS Didot", serif;
@@ -21,7 +21,7 @@ body {
   width: 98%;
   margin: auto;
 }
-/* *--------------------------- NAVEGACION ------------------------------------*/
+/* *------------------ NAVEGACION -----------------------*/
 /*TODO Agregue un color de fondo negro a la navegación superior */
 .topnav {
   margin: auto;
@@ -96,7 +96,7 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/**---------------------------- HEADER PAGINA ------------------------------*/
+/**-------------------- HEADER PAGINA --------------------*/
 .title-prod {
   color: #000000;
   background: #ffffff;
@@ -105,7 +105,7 @@ body {
   background: #ffffff;
   text-align: center;
 }
-/* *--------------------- ESTILOS DE LAS IMAGENES------------------------ */
+/* *----------------- ESTILOS DE LAS IMAGENES ------------ */
 .container {
   width: 100%;
   margin: 10px 0;
@@ -149,7 +149,10 @@ div.precio {
 hr {
   border: 5px solid var(--color-b);
 }
-/**-------------------------- REDES SOCIALES ----------------------------*/
+span{
+  font-weight: bold;
+}
+/**----------------- REDES SOCIALES -------------------*/
 .social {
   width: 100%;
   margin-top: 20px;
@@ -173,7 +176,7 @@ hr {
   font-size: 45px;
   color: black;
 }
-/**---------------------------- FOOTER COPYRIGHT ----------------------------*/
+/**---------------- FOOTER COPYRIGHT -----------------*/
 .footer {
   font-size: 12px;
   text-align: center;
@@ -181,8 +184,9 @@ hr {
   background: var(--color-b);
   font-weight: bold;
   border-radius: 10px;
+  color: white;
 }
-/**------------------------------- MEDIA QUERY -------------------------------*/
+/**------------------- MEDIA QUERY ----------------*/
 /* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 /*TODO La clase "responsive" se agrega a la navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la navegación superior se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
 @media screen and (max-width: 576px) {
