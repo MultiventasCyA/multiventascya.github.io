@@ -21,6 +21,11 @@ body {
   width: 98%;
   margin: auto;
 }
+
+hr {
+  border: 7px solid var(--color-b);
+  border-radius: 10px;
+}
 /* *------------------ NAVEGACION -----------------------*/
 /*TODO Agregue un color de fondo negro a la navegación superior */
 .topnav {
@@ -146,9 +151,7 @@ div.precio {
   font-style: italic;
   font-weight: bold;
 }
-hr {
-  border: 5px solid var(--color-b);
-}
+
 span {
   font-weight: bold;
 }
@@ -157,7 +160,6 @@ span {
   width: 100%;
   margin-top: 20px;
   padding: 50px 0;
-  border-top: 4px solid black;
 }
 .social p {
   text-align: center;
