@@ -19,15 +19,13 @@ body {
   width: 98%;
   margin: auto;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NAVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-/*TODO Agregue un color de fondo negro a la navegación superior */
+/*!!!!!!!!!!!!!!!!!!!!!!!!! NAVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .topnav {
   margin: auto;
   border-radius: 10px;
   background-color: var(--color-b);
   overflow: hidden;
 }
-/*TODO Dale estilo a los enlaces dentro de la barra de navegación */
 .topnav a {
   float: left;
   display: block;
@@ -41,16 +39,13 @@ body {
   background-color: var(--color-f);
   color: white;
 }
-/*TODO Oculte el enlace que debería abrir y cerrar la navegación superior en pantallas pequeñas */
 .topnav .icon {
   display: none;
 }
-/*TODO Contenedor desplegable: necesario para colocar el contenido desplegable */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-/*TODO Dale estilo al botón desplegable para que encaje dentro de la navegación superior */
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
@@ -61,7 +56,6 @@ body {
   font-family: inherit;
   margin: 0;
 }
-/*TODO Estilo del contenido desplegable (oculto por defecto) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -70,7 +64,6 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-/*TODO Dale estilo a los enlaces dentro del menú desplegable */
 .dropdown-content a {
   float: none;
   color: black;
@@ -79,18 +72,15 @@ body {
   display: block;
   text-align: left;
 }
-/*TODO Agregue un fondo oscuro en los enlaces de navegación superiores y el botón desplegable al pasar el mouse */
 .topnav a:hover,
 .dropdown:hover .dropbtn {
   background-color: var(--color-f);
   color: white;
 }
-/*TODO Agregue un fondo gris a los enlaces desplegables al pasar el mouse */
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
 }
-/*TODO Mostrar el menú desplegable cuando el usuario mueve el mouse sobre el botón desplegable */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -108,7 +98,6 @@ body {
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
 .social {
-  width: 100%;
   padding: 25px 0;
   border-top: 4px solid black;
 }
@@ -118,6 +107,9 @@ body {
   margin-bottom: 10px;
 }
 .links {
+  width: 30%;
+  margin-left: 35%;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,8 +118,16 @@ body {
   margin: 0 30px;
 }
 .links a i {
+  width: 50%;
   font-size: 45px;
   color: black;
+}
+div.img:hover {
+  cursor: pointer;
+  background-color:white;
+  transition: 1s all;
+  transform: scale(1.4);
+  z-index: 2;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
 .footer {
@@ -141,7 +141,6 @@ body {
 }
 
 /*!!!!!!!!!!!!!!!!!! MEDIA QUERY ///////////////////////*/
-/* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 @media screen and (max-width: 576px) {
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
