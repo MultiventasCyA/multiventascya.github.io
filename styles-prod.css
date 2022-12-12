@@ -26,7 +26,7 @@ body {
 }
 
 .tab {
-  border: 7px solid var(--color-b);
+  border: 8px solid var(--color-b);
   border-radius: 10px;
 }
 
