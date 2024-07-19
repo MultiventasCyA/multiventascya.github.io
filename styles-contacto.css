@@ -19,6 +19,10 @@ body {
   width: 98%;
   margin: auto;
 }
+
+span{
+  text-transform:uppercase;
+}
 /*!!!!!!!!!!!!!!!!!!!!!!!!! NAGVEGACION !!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* Agregue un color de fondo negro a la navegación superior */
 .topnav {
