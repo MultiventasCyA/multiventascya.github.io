@@ -1,4 +1,4 @@
-/*  Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/*  Alternar entre agregar y eliminar la clase "responsive" a topnav cuando el usuario hace clic en el icono */
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
