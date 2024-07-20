@@ -127,6 +127,7 @@ body {
   color: #000000;
   background: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 
   padding-top: 3rem;
 }
