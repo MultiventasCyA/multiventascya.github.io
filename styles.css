@@ -105,7 +105,7 @@ body {
   padding: 25px 0;
   border-top: 4px solid black;
 }
-.social p {
+.social .title-footer {
   text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
@@ -175,9 +175,8 @@ body {
   .social p {
     font-size: 30px;
   }
-  .links a i {
-    font-size: 30px;
-    color: black;
+  .social .links .face .icon {
+    color: var(--color-facebook);
   }
   .footer {
     font-size: 9px;
