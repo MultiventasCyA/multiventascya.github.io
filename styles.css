@@ -97,7 +97,7 @@ body {
   border: 1px solid transparent;
   border-radius: 10px;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!REDES SOCIALES///////////////////////////////////////*/
+/*!!!!!!!!!!!!!!!!!!REDES SOCIALES////////////////////*/
 .social {
   width: 100%;
   display: flex;
@@ -127,7 +127,7 @@ body {
   transform: scale(1.4);
   z-index: 2;
 }
-/*!!!!!!!!!!!!!!!!!!!!!!FOOTER COPYRIGHT////////////////////////////////////*/
+/*!!!!!!!!!!FOOTER COPYRIGHT///////////////*/
 .footer {
   font-size: 12px;
   text-align: center;
