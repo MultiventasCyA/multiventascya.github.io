@@ -113,10 +113,7 @@ body {
 /**-------------------- HEADER PAGINA --------------------*/
 .title-brand {
   color: #000000;
-  background: #ffffff;
   text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
-  color: #000000;
-  background: #ffffff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -159,12 +156,19 @@ body {
 }
 
 .container .card .desc {
-  font-size: 15px;
-  padding: 5px;
-  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  min-height: 150px;
   border: 1px solid gray;
   border-radius: 0 0 10px 10px;
+}
+
+.container .card .desc .title-prod-1,
+.container .card .desc .desc-1{
+  padding: 0 5px;
 }
 
 .container .card .desc .precio {
@@ -172,11 +176,6 @@ body {
   font-size: 30px;
   font-style: italic;
   font-weight: bold;
-}
-
-span {
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 /**----------------- REDES SOCIALES -------------------*/
@@ -267,13 +266,12 @@ span {
     text-align: left;
   }
 
-  .social p {
-    font-size: 30px;
+  .social .title-footer {
+    font-size: 25px;
   }
 
-  .links a i {
-    font-size: 30px;
-    color: black;
+  .social .links i {
+    font-size: 25px;
   }
 
   .footer {
@@ -285,32 +283,36 @@ span {
     border-radius: 10px;
   }
 
-  div.img {
+  .container .card {
     width: 150px;
     border: 3px solid transparent;
     cursor: pointer;
   }
 
-  div.img img {
+  .container .card img {
     width: 100%;
     height: 150px;
     border-radius: 10px;
     object-fit: contain;
   }
 
-  div.desc {
-    font-size: 13px;
+  .container .card .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 8px;
     padding: 5px;
-    min-height: auto;
-    text-align: center;
+    min-height: 100px;
     border: 1px solid gray;
     border-radius: 0 0 10px 10px;
   }
 
-  div.precio {
-    font-family: var(--font-noto);
+  .container .card .desc .precio{
+    /* width: 80%; */
     color: red;
-    font-size: 25px;
+    font-size: 1rem;
     font-style: italic;
     font-weight: bold;
   }

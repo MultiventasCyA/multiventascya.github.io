@@ -164,8 +164,8 @@ body {
   min-height: 150px;
   border: 1px solid gray;
   border-radius: 0 0 10px 10px;
-
 }
+
 .container .card .desc .title-prod-1,
 .container .card .desc .desc-1{
   padding: 0 5px;
@@ -309,7 +309,7 @@ body {
   }
 
   .container .card .desc .precio{
-    width: 80%;
+    /* width: 80%; */
     color: red;
     font-size: 25px;
     font-style: italic;
