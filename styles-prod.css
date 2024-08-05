@@ -1,12 +1,12 @@
 /*!!!!!!!!!!!!!!!!!!! ROOT y VARIABLES ////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --color-b: #00aec7;
   --color-f: #f96f00;
   --color-gris: #d8d8d8;
   --color-facebook: #4267B2
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*!!!!!!!! RESETEO DE ESTILOS Y FORMATO GENERAL //////////*/
 * {
@@ -297,18 +297,23 @@ body {
   }
 
   .container .card .desc {
-    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
     padding: 5px;
-    min-height: auto;
-    text-align: center;
+    min-height: 100px;
     border: 1px solid gray;
     border-radius: 0 0 10px 10px;
   }
 
-  .container .card .desc .precio {
+  .container .card .desc .precio{
+    width: 80%;
     color: red;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
   }
+
 }
