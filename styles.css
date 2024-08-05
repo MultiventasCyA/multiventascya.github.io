@@ -109,6 +109,7 @@ body {
   text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 
 .links {
