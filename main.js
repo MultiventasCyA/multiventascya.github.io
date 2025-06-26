@@ -15,7 +15,7 @@ if ("loading" in HTMLImageElement.prototype) {
   console.log("`lazy-loading` no soportado...");
 }
 
-// filepath: c:\Users\axl65\OneDrive\Proyectos\multiventascya.github.io\Salud&Belleza.html
+// link directo a WhatsApp
 document.querySelectorAll(".whatsapp-link").forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
