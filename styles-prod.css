@@ -1,11 +1,11 @@
 /*!!!!!!!!!!!!!!!!!!! ROOT y VARIABLES ////////////////////*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --color-b: #00aec7;
   --color-f: #f96f00;
   --color-gris: #d8d8d8;
-  --color-facebook: #4267B2
+  --color-facebook: #4267b2;
 }
 
 /*!!!!!!!! RESETEO DE ESTILOS //////////*/
@@ -32,7 +32,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-} 
+}
 .topnav {
   margin: auto;
   border-radius: 10px;
@@ -172,15 +172,15 @@ body {
   min-height: 150px;
   border: 1px solid gray;
   border-radius: 0 0 10px 10px;
-  }
+}
 
-.container .card .desc .title-prod-1{
+.container .card .desc .title-prod-1 {
   padding: 0 5px;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.container .card .desc .desc-1{
+.container .card .desc .desc-1 {
   padding: 0 5px;
   text-transform: capitalize;
 }
@@ -208,7 +208,7 @@ body {
 
 .links {
   width: auto;
-  margin: auto ;
+  margin: auto;
 }
 
 .social .links .face .icon {
@@ -217,7 +217,7 @@ body {
 
 .links .icon:hover {
   cursor: pointer;
-  background-color:white;
+  background-color: white;
   transition: 1s all;
   transform: scale(1.4);
   z-index: 2;
@@ -238,7 +238,6 @@ body {
 /* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 /*TODO La clase "responsive" se agrega a la navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la navegación superior se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
 @media screen and (max-width: 576px) {
-
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -314,7 +313,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
     font-size: 8px;
     padding: 5px;
     min-height: 100px;
@@ -322,16 +321,15 @@ body {
     border-radius: 0 0 10px 10px;
   }
 
-  .container .card .desc .title-prod-1{
+  .container .card .desc .title-prod-1 {
     font-size: 12px;
   }
 
-  .container .card .desc .precio{
+  .container .card .desc .precio {
     /* width: 80%; */
     color: red;
     font-size: 25px;
     font-style: italic;
     font-weight: bold;
   }
-
 }
