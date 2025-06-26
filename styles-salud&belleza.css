@@ -26,15 +26,14 @@ body {
 
 /* *------------------ NAVEGACION -----------------------*/
 /*TODO Agregue un color de fondo negro a la navegación superior */
+
 .topnav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-}
 
-.topnav {
   margin: auto;
   border-radius: 10px;
   background-color: #00aec7;
