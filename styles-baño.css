@@ -20,8 +20,11 @@ body {
 }
 
 .tab {
-  border: 8px solid var(--color-b);
+  border: 8px solid transparent;
   border-radius: 10px;
+}
+.color-change-5x {
+	animation: color-change-5x 12s linear infinite alternate both;
 }
 
 /* *------------------ NAVEGACION -----------------------*/
@@ -351,5 +354,22 @@ body {
     transform: translateZ(12px);
     filter: blur(0);
     opacity: 1;
+  }
+}
+@keyframes color-change-5x {
+  0% {
+    background: #19dcea;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #ea2222;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
   }
 }
