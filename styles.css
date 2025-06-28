@@ -40,7 +40,7 @@ body {
   
   margin: auto;
   border-radius: 10px;
-  background-color: #00aec7;
+  background-color: var(--color-b);
   overflow: hidden;
 }
 .topnav a {
@@ -80,6 +80,8 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  
+  animation: color-change-5x 12s linear infinite alternate both;
 }
 .dropdown-content a {
   float: none;
@@ -100,6 +102,11 @@ body {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.dropdown:hover .dropdown-content,
+.dropdown-content:active,
+.dropdown-content:focus {
+  animation: color-change-5x 12s linear infinite alternate both;
 }
 
 /*!!!!!!!!!!!!! SHOWCASE /////////////////////*/
@@ -150,7 +157,7 @@ body {
   font-size: 12px;
   text-align: center;
   padding: 15px;
-  background: var(--color-b);
+  /* background: var(--color-b); */
   font-weight: bold;
   border-radius: 10px;
   color: white;
@@ -222,4 +229,5 @@ body {
     background: #3bd80d;
   }
 }
+
 
