@@ -2,57 +2,62 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- !FONT AWESOME -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-      <title>Multiventas C&A</title>
-      <link rel="icon" href="img/icono.ico" />
-      <link rel="stylesheet" href="styles-baño.css" type="text/css" />
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- !FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Multiventas C&A</title>
+    <link rel="icon" href="img/icono.ico" />
+    <link rel="stylesheet" href="styles-baño.css" type="text/css" />
   </head>
   <body>
     <!-- *MENU NAVEGACION -->
     <div class="topnav color-change-5x" id="myTopnav">
       <a href="index.html">Inicio</a>
-      <a href="productos.html" >Productos</a>
-      <a href="Salud&Belleza.html" >Salud y Belleza</a>
+      <a href="productos.html">Productos</a>
+      <a href="Salud&Belleza.html">Salud y Belleza</a>
       <a href="Baño.html" aria-current="page">Baño</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()" >&#9776;</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+        >&#9776;</a
+      >
     </div>
 
     <!-- *GALERIA DE IMAGENES HERRAJES -->
-    <h1 class="title-brand">HERRAJES PARA BAÑO</h1><br />
+    <h1 class="title-brand">HERRAJES PARA BAÑO</h1>
+    <br />
 
     <div class="container">
       <div class="card">
-        <a href="#" class="whatsapp-link" target="_blank">
-          <img loading="lazy" src="img/varios/llave (2).png" />
-        </a>
+        <img loading="lazy" src="img/varios/llave (2).png" />
         <div class="desc">
           <h2 class="title-prod-1">MONOMANDO MEZCLADORA</h2>
           <h5 class="desc-1">para lavabo marca dica mod. 4433</h5>
           <h5 class="precio">$800.00 c/u</h5>
+          <button class="btn-pedir" onclick="pedirProducto(this)">Pedir</button>
         </div>
       </div>
       <div class="card">
-        <a href="#" class="whatsapp-link" target="_blank">
-          <img loading="lazy" src="img/varios/llave (3).png" />
-        </a>
+        <img loading="lazy" src="img/varios/llave (3).png" />
         <div class="desc">
           <h2 class="title-prod-1">LLAVES DE PASO</h2>
           <h5 class="desc-1">Varias unidades disponibles.</h5>
           <h5 class="precio">$39.90 c/u</h5>
+          <button class="btn-pedir" onclick="pedirProducto(this)">Pedir</button>
         </div>
       </div>
       <div class="card">
-        <a href="#" class="whatsapp-link" target="_blank">
-          <img loading="lazy" src="img/varios/llavejardin.jpg" />
-        </a>
+        <img loading="lazy" src="img/varios/llavejardin.jpg" />
         <div class="desc">
           <h2 class="title-prod-1">Llave de Jardín</h2>
-          <h5 class="desc-1">DICA con Diseño Moderno sin cuerdas, Terminado Cromo, Mod. 4019DM, 3 disponibles</h5>
+          <h5 class="desc-1">
+            DICA con Diseño Moderno sin cuerdas, Terminado Cromo, Mod. 4019DM, 3
+            disponibles
+          </h5>
           <h5 class="precio">$199.90 c/u</h5>
+          <button class="btn-pedir" onclick="pedirProducto(this)">Pedir</button>
         </div>
       </div>
     </div>
@@ -64,9 +69,13 @@
     <section class="social">
       <p class="title-footer">Sigue a Multiventas</p>
       <div class="links">
-          <a class="face" href="https://www.facebook.com/MultiventasCyA" target="_blank">
-            <i class="fa-brands fa-square-facebook fa-3x icon"></i>
-          </a>
+        <a
+          class="face"
+          href="https://www.facebook.com/MultiventasCyA"
+          target="_blank"
+        >
+          <i class="fa-brands fa-square-facebook fa-3x icon"></i>
+        </a>
       </div>
     </section>
 
@@ -77,6 +86,5 @@
 
     <!-- *SCRIPT -->
     <script src="main.js"></script>
-
   </body>
 </html>
