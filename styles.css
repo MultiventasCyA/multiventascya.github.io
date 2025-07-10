@@ -24,13 +24,10 @@ html, body {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 /*!!!!!!!!!!!!! NAVEGACION !!!!!!!!!!!!!!!!!*/
-.color-change-5x {
-	animation: color-change-5x 12s linear infinite alternate both;
-}
 .topnav {
   position: fixed;
   top: 0;
@@ -39,7 +36,7 @@ body {
   z-index: 1000;
   
   margin: auto;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   background-color: var(--color-b);
   overflow: hidden;
 }
@@ -157,9 +154,9 @@ body {
   font-size: 12px;
   text-align: center;
   padding: 15px;
-  /* background: var(--color-b); */
+  background: var(--color-b);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   color: white;
 }
 
@@ -207,27 +204,8 @@ body {
     font-size: 9px;
     text-align: center;
     padding: 15px;
-    /* background: var(--color-b); */
+    background: var(--color-b);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
   }
 }
-@keyframes color-change-5x {
-  0% {
-    background: #19dcea;
-  }
-  25% {
-    background: #b22cff;
-  }
-  50% {
-    background: #ea2222;
-  }
-  75% {
-    background: #f5be10;
-  }
-  100% {
-    background: #3bd80d;
-  }
-}
-
-

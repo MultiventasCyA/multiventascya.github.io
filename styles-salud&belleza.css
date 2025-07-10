@@ -1,11 +1,11 @@
 /****************** VARIABLES y FUENTES ****************/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --color-b: #00aec7;
   --color-f: #f96f00;
   --color-gris: #d8d8d8;
-  --color-facebook: #4267B2
+  --color-facebook: #4267b2;
 }
 
 /******** RESETEO DE ESTILOS **********/
@@ -17,15 +17,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .tab {
   border: 8px solid transparent;
   border-radius: 10px;
-}
-
-.color-change-5x {
-	animation: color-change-5x 12s linear infinite alternate both;
 }
 
 /* *------------------ NAVEGACION -----------------------*/
@@ -37,9 +38,8 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-
   margin: auto;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   background-color: #00aec7;
   overflow: hidden;
 }
@@ -129,7 +129,7 @@ body {
   text-transform: uppercase;
   margin-top: 60px;
 
-  animation: title-brand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation: title-brand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* *----------------- ESTILOS DE LAS IMAGENES ------------ */
@@ -152,6 +152,7 @@ body {
   border: 3px solid transparent;
   border-radius: 10px;
   background-color: #ffffff;
+  min-height: auto; /* Puedes ajustar la altura mínima */
 }
 
 .container .card img {
@@ -161,19 +162,11 @@ body {
   object-fit: contain;
 }
 
-.container .card:hover {
-  cursor: pointer;
-  background-color: white;
-  transition: 1s all;
-  transform: scale(1.1);
-  z-index: 2;
-}
-
 .container .card .desc {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  flex: 1;
   text-align: center;
   min-height: 150px;
   border: 1px solid gray;
@@ -187,7 +180,7 @@ body {
 }
 
 .container .card .desc .desc-1 {
-  /* padding: 0 5px; */
+  padding: 0 5px;
   font-size: 12px;
   text-transform: capitalize;
 }
@@ -199,13 +192,28 @@ body {
   font-weight: bold;
 }
 
+.btn-pedir {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: var(--color-f); /* Naranja */
+  color: white;
+  border: none;
+  border-radius: 0px 0px 9px 9px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: stretch; /* El botón ocupa todo el ancho de .desc */
+}
+.btn-pedir:hover {
+  background-color: #128c7e;
+}
+
 /**----------------- REDES SOCIALES -------------------*/
 .social {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 25px 0;
-  /* border-top: 4px solid black; */
 }
 .social .title-footer {
   text-align: center;
@@ -216,7 +224,7 @@ body {
 
 .links {
   width: auto;
-  margin: auto ;
+  margin: auto;
 }
 
 .social .links .face .icon {
@@ -225,7 +233,7 @@ body {
 
 .links .icon:hover {
   cursor: pointer;
-  background-color:white;
+  background-color: white;
   transition: 1s all;
   transform: scale(1.4);
   z-index: 2;
@@ -238,7 +246,7 @@ body {
   padding: 15px;
   background: var(--color-b);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   color: white;
 }
 
@@ -246,7 +254,6 @@ body {
 /* TODO Cuando la pantalla tenga menos de 600 píxeles de ancho, oculta todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
 /*TODO La clase "responsive" se agrega a la navegación superior con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que la navegación superior se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
 @media screen and (max-width: 576px) {
-
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
@@ -293,7 +300,7 @@ body {
 
   .social .links .face .icon {
     font-size: 25px;
-  } 
+  }
 
   .footer {
     font-size: 9px;
@@ -301,13 +308,16 @@ body {
     padding: 15px;
     background: var(--color-b);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
   }
 
   .container .card {
     width: 150px;
     border: 3px solid transparent;
     cursor: pointer;
+    min-height: auto; /* Ajusta según tu diseño */
+    display: flex;
+    flex-direction: column;
   }
 
   .container .card img {
@@ -320,9 +330,9 @@ body {
   .container .card .desc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-
+    flex: 1;
     font-size: 8px;
     padding: 5px;
     min-height: 100px;
@@ -330,14 +340,14 @@ body {
     border-radius: 0 0 10px 10px;
   }
 
-  .container .card .desc .title-prod-1{
+  .container .card .desc .title-prod-1 {
     font-size: 12px;
   }
-  .container .card .desc .desc-1{
+  .container .card .desc .desc-1 {
     font-size: 8px;
   }
 
-  .container .card .desc .precio{
+  .container .card .desc .precio {
     /* width: 80%; */
     color: red;
     font-size: 1rem;
@@ -345,6 +355,22 @@ body {
     font-weight: bold;
   }
 }
+
+  .btn-pedir {
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: var(--color-f); /* Naranja */
+    color: white;
+    border: none;
+    border-radius: 0px 0px 9px 9px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    align-self: stretch;
+  }
+  .btn-pedir:hover {
+    background-color: #128c7e;
+  }
 
 @keyframes title-brand {
   0% {
@@ -357,23 +383,5 @@ body {
     transform: translateZ(12px);
     filter: blur(0);
     opacity: 1;
-  }
-}
-
-@keyframes color-change-5x {
-  0% {
-    background: #19dcea;
-  }
-  25% {
-    background: #b22cff;
-  }
-  50% {
-    background: #ea2222;
-  }
-  75% {
-    background: #f5be10;
-  }
-  100% {
-    background: #3bd80d;
   }
 }
